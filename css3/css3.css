@@ -141,3 +141,165 @@ header h1{
 		background-position: 100%,100%;
 	}
 }
+
+
+
+#animation3{
+	width:200px;
+	height:200px;
+	margin:0 auto;
+	background-position: center;
+	background-size: 200px,200px;
+	background-image: repeating-radial-gradient(transparent, transparent 9px, black 11px, black 20px);
+}
+
+#animation3:hover{
+	animation: animation3 1s;
+	-webkit-animation:animation3 1s;
+	-o-animation:animation3 1s;
+	-moz-animation:animation3 1s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+}
+
+@keyframes animation3{
+	form{
+		background-size: 200px,200px;
+	}
+	to{
+		background-size: 25px,25px;
+	}
+}
+@-moz-keyframes animation3{
+	form{
+		background-size: 200px,200px;
+	}
+	to{
+		background-size: 25px,25px;
+	}
+}
+@-webkit-keyframes animation3{
+	form{
+		background-size: 200px,200px;
+	}
+	to{
+		background-size: 25px,25px;
+	}
+}
+
+@-o-keyframes animation3{
+	form{
+		background-size: 200px,200px;
+	}
+	to{
+		background-size: 25px,25px;
+	}
+}
+
+
+
+
+#animation4{
+	width:200px;
+	height:200px;
+	margin:0 auto;
+	border-radius:0;
+	background-color:#dddddd;
+}
+
+#animation4:hover{
+	animation: animation4 1s;
+	-webkit-animation:animation4 1s;
+	-o-animation:animation4 1s;
+	-moz-animation:animation4 1s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+}
+
+@keyframes animation4{
+	form{
+		border-radius:0;
+	}
+	to{
+		border-radius: 50%;
+	}
+}
+@-moz-keyframes animation4{
+	form{
+		border-radius:0;
+	}
+	to{
+		border-radius: 50%;
+	}
+}
+@-webkit-keyframes animation4{
+	form{
+		border-radius:0;
+	}
+	to{
+		border-radius: 50%;
+	}
+}
+
+@-o-keyframes animation4{
+	form{
+		border-radius:0;
+	}
+	to{
+		border-radius: 50%;
+	}
+}
+
+
+
+#animation5{
+	width:200px;
+	height:200px;
+	margin:0 auto;
+	transform:rotate(0deg);
+	background-color:#dddddd;
+}
+
+#animation5:hover{
+	animation: animation5 1s;
+	-webkit-animation:animation5 1s;
+	-o-animation:animation5 1s;
+	-moz-animation:animation5 1s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+}
+
+@keyframes animation5{
+	form{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+@-moz-keyframes animation5{
+	form{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+@-webkit-keyframes animation5{
+	form{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+
+@-o-keyframes animation5{
+	form{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+
