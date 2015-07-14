@@ -1,0 +1,143 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+font-family:"Times New Roman";
+}
+
+header h1{
+	font-size: 4em;
+}
+
+#content .card{
+	background-color: #fff;
+	height:300px;
+	width:80%;
+	margin:0 auto;
+	border:1px solid #dddddd;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+}
+.card .title{
+	height:30px;
+	background-color:#5DB665;
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+	line-height: 30px;
+	padding:0 10px;
+}
+
+#animation1{
+	height:200px;
+	width:200px;
+	margin:0 auto;
+	background: slategray;
+}
+
+#animation1:hover{
+	animation:animation1 2s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+	-moz-animation:animation1 2s;
+	-webkit-animation:animation1 2s；
+	-o-animation:animation1 2s;
+}
+
+@keyframes animation1{
+	0% {
+		background-color: slategray;
+	}
+	100%{
+		background-color: red;
+	}
+}
+
+@-webkit-keyframes animation1{
+	0% {
+		background-color: slategray;
+	}
+	100%{
+		background-color: red;
+	}
+}
+@-o-keyframes animation1{
+	0% {
+		background-color: slategray;
+	}
+	100%{
+		background-color: red;
+	}
+}
+@-moz-keyframes animation1{
+	0% {
+		background-color: slategray;
+	}
+	100%{
+		background-color: red;
+	}
+}
+
+
+
+#animation2{
+	width:200px;
+	height:200px;
+	margin:0 auto;
+	background-image:linear-gradient(135deg,transparent 25%,black 25%,black 50%,transparent 50%,transparent 75%, black 75%,black);
+	background-size: 50%,50%;
+	background-position: 0,0;
+}
+
+#animation2:hover{
+	animation: animation2 1s;
+	-webkit-animation:animation2 1s;
+	-o-animation:animation2 1s;
+	-moz-animation:animation2 1s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+}
+
+@keyframes animation2{
+	form{
+		background-position: 0,0;
+	}
+	to{
+		background-position: 100%,100%;
+	}
+}
+@-moz-keyframes animation2{
+	form{
+		background-position: 0,0;
+	}
+	to{
+		background-position: 100%,100%;
+	}
+}
+@-webkit-keyframes animation2{
+	form{
+		background-position: 0,0;
+	}
+	to{
+		background-position: 100%,100%;
+	}
+}
+
+@-o-keyframes animation2{
+	form{
+		background-position: 0,0;
+	}
+	to{
+		background-position: 100%,100%;
+	}
+}
