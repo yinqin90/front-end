@@ -1,0 +1,97 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+outline: 0;
+font-size: 100%;
+vertical-align: baseline;
+background: transparent;
+font-family:"Times New Roman";
+}
+
+ul,li,ol{
+	list-style: none;
+}
+
+
+#awwwards a{
+	width:69px;
+	height:105px;
+	display:block;
+}
+
+#awwwards{
+	position: absolute;
+	right:0;
+	top:50px;
+}
+
+header{
+padding:50px 0;
+
+}
+.wrap{
+	max-width:1140px;
+	width:90%;
+	margin:0 auto;
+	max-width: 1140px;
+	position:relative;
+}
+
+
+.logo-mark{
+	float:left;
+	height:138px;
+	width:7.33%;
+	background-image: url(../images/supereight_symbol.svg), url(../images/supereight_symbol.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+header .intro{
+	margin-left:15%;
+	font-size: 5em;
+	letter-spacing: .05em;
+	text-transform: uppercase;
+	font-weight:700;
+}
+header .intro p{
+	color:#999999;
+	font-size: 0.3em;
+	font-weight:lighter;
+}
+
+
+.nav-container{
+	background: #eeeeee;
+	height:4em;
+	font-size:1em;
+}
+
+.nav-container #navslide{
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-size: 1em;
+	line-height: 4em;
+	position: absolute;
+	right:0;
+}
+
+.nav-container #navslide li{
+	display:inline-block;
+	padding:0 10px;
+}
+
+#what_we_do{
+	background-image: url(../images/hero-office-06.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
