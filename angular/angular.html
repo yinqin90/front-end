@@ -42,10 +42,56 @@
 <div ng-app="" ng-init="person={name:'John',age:'21'}">
 	<span>姓名：{{person.name}}</span>
 </div>
+<div ng-app="" ng-init="person={name:'John',age:'21'}">
+	姓名：<span ng-bind="person.name"></span>
+</div>
+<div ng-app="" ng-init="personList=['John','Anna','E']">
+	{{personList[1]}}
+</div>
+<div ng-app="" ng-init="number=2;price=4">
+	数量:<input type="text" ng-model="number"/>
+	价格:<input type="text" ng-model="price"/>
+	<p>总价:{{number * price}}</p>
+</div>
+
+<div ng-app="" ng-init="number=2;price=4">
+	数量:<input type="text" ng-model="number"/>
+	价格:<input type="text" ng-model="price"/>
+	总价:<span ng-bind="number * price"></span>
+</div>
+<ul ng-app="" ng-init="personList=['aa','bb','cc','dd']">
+	<li ng-repeat="x in personList">
+		{{x}}
+	</li>
+</ul>
+
+<ul ng-app="" ng-init="names=[
+{name:'Jani',country:'Norway'},
+{name:'Hege',country:'Sweden'},
+{name:'Kai',country:'Denmark'}]">
+	<li ng-repeat="x in names">
+		姓名:{{x.name}}     国家:{{x.country}}
+	</li>
+</ul>
 -->
 
-<div>
+<!--controller-->
 
+<div ng-app="" ng-controller="personController">
+	<input type="text" ng-model="person.firstNme"/>
+	<input type="text" ng-model="person.lastName"/>
+
+	姓名：{{person.firstNme + " " + person.lastName}}
+</div>
+
+<script>
+function personController($scope){
+	$scope.person = {
+		firstNme:"aa",
+		lastName:"bb"
+	}
+}
+</script>
 
 </body>
 </html>
