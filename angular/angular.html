@@ -168,7 +168,7 @@ function personController($scope){
 	</ul>
 </div>
 <script src="personController.js" type="text/javascript"></script>
--->
+
 
 
 
@@ -199,6 +199,36 @@ function personController($scope){
 	})
 
 </script>
+-->
 
+<div ng-app="myApp" ng-controller="numberCtrl">
+<h3></h3>
+<textarea ng-model="message">
+
+</textarea>
+
+<button ng-click="save()">保存</button>
+<button ng-click="clear()">清除</button>
+
+剩下的字符数:<span ng-bind="left()"></span>
+</div>
+
+
+<script>
+	var app =  angular.module("myApp",[]);
+	app.controller("numberCtrl",function($scope){
+		$scope.message = "";
+		$scope.left = function(){
+			return 100 - $scope.message.length;
+		};
+		$scope.save = function(){
+			$scope.message = ""
+		}
+
+		$scope.clear = function(){
+			$scope.message = ""
+		}
+	})
+</script
 </body>
 </html>
