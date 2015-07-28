@@ -115,16 +115,15 @@ function personController($scope){
 
 
 
-
 <div ng-app="" ng-controller="personController">
 	<input type="text" ng-model="person.firstNme"/>
 	<input type="text" ng-model="person.lastName"/>
 	姓名：{{person.fullName()}}
 </div>
 <script src="personController.js" type="text/javascript"></script>
--->
 
-<!--controller-->
+
+
 
 <div ng-app="" ng-controller="namesController">
 	<input type="text" ng-model="name"/>
@@ -138,6 +137,68 @@ function personController($scope){
 
 </div>
 <script src="personController.js" type="text/javascript"></script>
+
+
+
+
+
+
+
+
+<div ng-app="">
+	<input type="text" ng-disabled="true"/>
+
+	<p ng-show="true">可见的</p>
+	<p ng-show="false">不可见的</p>
+</div>
+
+
+<div ng-app="" >
+	<button ng-click="count=count+1">click me</button>
+	<p>{{count}}</p>
+</div>
+
+<div ng-app="" ng-controller="personController">
+<button ng-click="toggle()">隐藏/显示</button>
+	<ul ng-hide="myVar">
+		<li ng-repeat="x in persons">
+			{{x.name}},
+			{{x.age}}
+		</li>
+	</ul>
+</div>
+<script src="personController.js" type="text/javascript"></script>
+-->
+
+
+
+
+<div ng-app="myApp" >
+	<div ng-controller="myCtrl">
+		{{firstName + " "+ lastName}}
+	</div>
+
+	<div ng-controller="person">
+		{{firstName + " "+ lastName}}
+	</div>
+	
+</div>
+
+
+<script>
+	var app = angular.module("myApp",[]);
+
+	app.controller("myCtrl", function($scope){
+		$scope.firstName = "aa";
+		$scope.lastName = "bb";
+	});
+
+	app.controller("person",function($scope){
+		$scope.firstName = "cc";
+		$scope.lastName = "dd";
+	})
+
+</script>
 
 </body>
 </html>
