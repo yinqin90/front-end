@@ -1,0 +1,129 @@
+#header {
+  color: #4d926f;
+}
+h2 {
+  color: #4d926f;
+}
+#header {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+#footer {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+#header h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+#header p {
+  font-size: 12px;
+}
+#header p a {
+  text-decoration: none;
+}
+#header p a:hover {
+  border-width: 1px;
+}
+#header {
+  color: #333333;
+  border-left: 1px;
+  border-right: 2px;
+}
+#footer {
+  color: #114411;
+  border-color: #7d2717;
+}
+#header {
+  color: #6c94be;
+}
+p {
+  content: "I am fnord.";
+}
+.bordered {
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+#menu a {
+  color: #111;
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+.post {
+  color: red;
+  border-top: dotted 1px black;
+  border-bottom: solid 2px black;
+}
+#header {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+button {
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.wrap {
+  text-wrap: wrap;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
+}
+pre {
+  text-wrap: wrap;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  word-wrap: break-word;
+}
+#header {
+  box-shadow: 2px 5px 1px #000000;
+  -moa-box-shadow: 2px 5px 1px #000000;
+  -webkit-box-shadow: 2px 5px 1px #000000;
+}
+.class {
+  color: #a2a2a2;
+  display: block;
+}
+.class1 {
+  background-color: black;
+  color: #dddddd;
+}
+.class2 {
+  background-color: white;
+  color: #555555;
+}
+.class {
+  color: #f6430f;
+  background-color: #f8b38d;
+}
+#header {
+  color: #a2a2a2;
+  display: block;
+  color: #f6430f;
+  background-color: #f8b38d;
+}
+#header a {
+  color: orange;
+  display: block;
+  border: 1px solid black;
+  background-color: grey;
+}
+#header a:hover {
+  background-color: #ffffff;
+}
+#page #header {
+  color: #ffffff;
+}
+#footer {
+  color: #ff0000;
+}
+p:after {
+  content: "HELLO!";
+}
