@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>css3-flex</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--禁止浏览器在本地计算机缓存当前页面-->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <style>
+    .container {
+        display: -webkit-flex;
+        display: flex;
+    }
+    
+    .inital {
+        -webkit-flex: initial;
+        flex: initial;
+        width: 200px;
+        min-width: 100px;
+    }
+    
+    .none {
+        -webkit-flex: none;
+        flex: none;
+        width: 200px;
+    }
+    
+    .flex1 {
+        -webkit-flex: 1;
+        flex: 1;
+    }
+    
+    .flex2 {
+        -webkit-flex: 2;
+        flex: 2;
+    }
+    
+    .container > div {
+        border: 1px solid #eee;
+    }
+    
+    .vertical-container {
+        height: 300px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        margin-top: 20px;
+    }
+    
+    #container > div {
+        display: flex;
+        font-family: "Courier New", "Lucida Console", monospace;
+    }
+    
+    #container > div > div {
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(-45deg, #788cff, #b4c8ff);
+    }
+    
+    #flex-start {
+        justify-content: flex-start;
+    }
+    
+    #center {
+        justify-content: center;
+    }
+    
+    #flex-end {
+        justify-content: flex-end;
+    }
+    
+    #space-between {
+        justify-content: space-between;
+    }
+    
+    #space-around {
+        justify-content: space-around;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inital">
+            空间足够的时候，我的宽度是200px，如果空间不足，我会变窄到100px，但不会再窄了。
+        </div>
+        <div class="none">
+            无论窗口如何变化，我的宽度一直是200px。
+        </div>
+        <div class="flex1">
+            我会占满剩余宽度的1/3。
+        </div>
+        <div class="flex2">
+            我会占满剩余宽度的2/3。
+        </div>
+    </div>
+    <div class="vertical-container">
+        <div>
+            CSS里总算是有了一种简单的垂直居中布局的方法了！
+        </div>
+    </div>
+    <div id="container">
+        <p>justify-content: flex-start</p>
+        <div id="flex-start">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p>justify-content: flex-end</p>
+        <div id="flex-end">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p>justify-content: center</p>
+        <div id="center">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p>justify-content: space-between</p>
+        <div id="space-between">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p>justify-content: space-around</p>
+        <div id="space-around">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
