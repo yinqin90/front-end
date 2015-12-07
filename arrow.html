@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>html-arrow</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--禁止浏览器在本地计算机缓存当前页面-->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #arrowLeft1 {
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-left: 10px solid red;
+        margin: 20px;
+    }
+    
+    #arrowRight1 {
+        height: 0;
+        width: 0;
+        border-bottom: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-right: 10px solid red;
+        margin: 20px;
+    }
+    
+    #arrowTop1 {
+        height: 0;
+        width: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid red;
+        margin: 20px;
+    }
+    
+    #arrowBottom1 {
+        height: 0;
+        width: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid red;
+        margin: 20px;
+    }
+    /* 基本样式 */
+    
+    .tip {
+        background: #eee;
+        border: 1px solid #ccc;
+        margin-left: 30px;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+        width: 200px;
+    }
+    /* 箭头 - :before and :after, 一起组成了好看的气泡小箭头 */
+    
+    .tip:before {
+        position: absolute;
+        display: inline-block;
+        border-top: 17px solid transparent;
+        border-right: 17px solid #eee;
+        border-bottom: 17px solid transparent;
+        border-right-color: rgba(0, 0, 0, 0.2);
+        left: -18px;
+        top: 40px;
+        content: '';
+    }
+    /* 背景阴影*/
+    
+    .tip:after {
+        position: absolute;
+        display: inline-block;
+        border-top: 16px solid transparent;
+        border-right: 16px solid #eee;
+        border-bottom: 16px solid transparent;
+        left: -16px;
+        top: 41px;
+        content: '';
+    }
+    </style>
+</head>
+
+<body>
+    第一种方式:使用border
+    <div id="arrowLeft1">
+    </div>
+    <div id="arrowRight1">
+    </div>
+    <div id="arrowTop1">
+    </div>
+    <div id="arrowBottom1">
+    </div>
+    <hr> 第二种方式 ：使用border和伪类
+    <div style="position:relative;">
+        <div class="tip">
+            企业级开发首选技术是什么？JavaEE和.Net哪个技术更好？在JavaEE开发中主要用哪些框架？另外在移动大热的趋势下如何开发出一个成功的Android产品？
+        </div>
+        <br/>
+        <div class="tip">
+            向左的箭头: 只有三个边：上、下、右。而
+            < | 总体来看，向左三角形的高=上+下边框的长度。 宽=右边框的长度<br /> 向右的箭头: 只有三个边：上、下、左。而 |> 总体来看，向右三角形的高=上+下边框的长度。 宽=左边框的长度
+            <br /> 向上的箭头,类似于A,只有三个边，不能指定上边框
+        </div>
+    </div>
+</body>
+
+</html>
