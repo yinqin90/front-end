@@ -90,57 +90,72 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="inital">
-            空间足够的时候，我的宽度是200px，如果空间不足，我会变窄到100px，但不会再窄了。
+    <div id="testIframe">
+        <div class="container">
+            <div class="inital">
+                空间足够的时候，我的宽度是200px，如果空间不足，我会变窄到100px，但不会再窄了。
+            </div>
+            <div class="none">
+                无论窗口如何变化，我的宽度一直是200px。
+            </div>
+            <div class="flex1">
+                我会占满剩余宽度的1/3。
+            </div>
+            <div class="flex2">
+                我会占满剩余宽度的2/3。
+            </div>
         </div>
-        <div class="none">
-            无论窗口如何变化，我的宽度一直是200px。
+        <div class="vertical-container">
+            <div>
+                CSS里总算是有了一种简单的垂直居中布局的方法了！
+            </div>
         </div>
-        <div class="flex1">
-            我会占满剩余宽度的1/3。
+        <div id="container">
+            <p>justify-content: flex-start</p>
+            <div id="flex-start">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p>justify-content: flex-end</p>
+            <div id="flex-end">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p>justify-content: center</p>
+            <div id="center">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p>justify-content: space-between</p>
+            <div id="space-between">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <p>justify-content: space-around</p>
+            <div id="space-around">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-        <div class="flex2">
-            我会占满剩余宽度的2/3。
-        </div>
-    </div>
-    <div class="vertical-container">
         <div>
-            CSS里总算是有了一种简单的垂直居中布局的方法了！
-        </div>
-    </div>
-    <div id="container">
-        <p>justify-content: flex-start</p>
-        <div id="flex-start">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <p>justify-content: flex-end</p>
-        <div id="flex-end">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <p>justify-content: center</p>
-        <div id="center">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <p>justify-content: space-between</p>
-        <div id="space-between">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <p>justify-content: space-around</p>
-        <div id="space-around">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
 </body>
+<script src="jquery-2.1.4.js"></script>
+<script>
+var passHeight = function() {
+    var constr = $("#testIframe");
+    if (constr.length) {
+        var bh = $("#testIframe").outerHeight(true);
+        window.top.location = window.location + '#'
+    }
+};
+passHeight();
+
+//http://www.zhangxinxu.com/wordpress/2010/12/%E5%B0%8Ftip%EF%BC%9Aiframe%E9%AB%98%E5%BA%A6%E5%8A%A8%E6%80%81%E8%87%AA%E9%80%82%E5%BA%94/
+</script>
 
 </html>

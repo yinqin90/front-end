@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>html5-iframe</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <!--禁止浏览器在本地计算机缓存当前页面-->
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <style>
+    #origin {
+        background-color: #eee;
+        display: -webkit-flex;
+        display: flex;
+        height: 200px;
+        width: 100%;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+    
+    .flex1 {
+        -webkit-flex: 1;
+        flex: 1;
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="origin">
+        <div class="flex1">iframe 测试，h5新特性</div>
+    </div>
+    <div id="iframeBox">
+        <iframe src="flex.html" id="testIframe" frameborder="0" scrolling="no" width="100%" height="120">
+            <p>Your browser does not support iframes.</p>
+        </iframe>
+    </div>
+</body>
+<script src="jquery-2.1.4.js"></script>
+<script>
+var iframe = document.getElementById("testIframe");
+var iframeHeight = function() {
+    var hash = window.location.hash.slice(1),
+        h;
+    if (hash && /height=/.test(hash)) {
+        h = hash.replace("height=", "");
+        iframe.height = h;
+    }
+    setTimeout(iframeHeight, 200);
+};
+iframeHeight();
+//http://www.zhangxinxu.com/wordpress/2010/12/%E5%B0%8Ftip%EF%BC%9Aiframe%E9%AB%98%E5%BA%A6%E5%8A%A8%E6%80%81%E8%87%AA%E9%80%82%E5%BA%94/
+</script>
+</script>
+
+</html>
